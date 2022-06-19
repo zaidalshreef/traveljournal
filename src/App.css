@@ -1,38 +1,120 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 6em; */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background: #f55a5a;
+  color: #fff;
+  gap: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  margin-bottom: 6em;
+}
+
+.App-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  display: flex;
+  width: 471px;
+  padding: 20px ;
+  border-bottom: 1px solid #F5F5F5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:last-of-type {
+  border-bottom: none;
+}
+
+
+.card-image {
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  height: 144px;
+  margin-left: 19px;
+}
+
+.country-name {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2b283a;
+  margin-right: 12px;
+}
+
+.country-location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #918e9b;
+}
+
+.map-icon {
+  width: 7px;
+  height: 9.55px;
+  margin-right: 5px;
+}
+
+.card-title > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2b283a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #2b283a;
+  margin-top: 13px;
+}
+
+.card-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  width: 326px;
+  /* or 15px */
+  color: #2b283a;
 }
